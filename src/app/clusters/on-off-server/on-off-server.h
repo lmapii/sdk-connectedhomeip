@@ -158,6 +158,9 @@ struct OnOffEffect
  */
 void emberAfOnOffClusterLevelControlEffectCallback(chip::EndpointId endpoint, bool newValue);
 
+void emberAfOnOffClusterLevelControlIsEffectActiveCallback(chip::EndpointId endpoint, bool * const isActive,
+                                                           bool * const targetState);
+
 /**********************************************************
  * Callbacks
  *********************************************************/
